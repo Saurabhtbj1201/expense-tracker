@@ -43,7 +43,7 @@ const Dashboard: React.FC = () => {
     .reduce((sum, exp) => sum + exp.amount, 0);
 
   const monthTrend = lastMonthExpenses > 0 
-    ? ((thisMonthExpenses - lastMonthExpenses) / lastMonthExpenses * 100).toFixed(1)
+    ? parseFloat(((thisMonthExpenses - lastMonthExpenses) / lastMonthExpenses * 100).toFixed(1))
     : 0;
 
   // Prepare chart data
