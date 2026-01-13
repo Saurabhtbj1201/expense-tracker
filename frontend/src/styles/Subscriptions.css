@@ -1,0 +1,254 @@
+/* Import shared styles from Expenses.css */
+@import './Expenses.css';
+
+/* Subscription-specific overrides and unique styles */
+.subscriptions-page {
+  padding: 2rem;
+  background-color: #f9fafb;
+  min-height: 100vh;
+}
+
+.subscriptions-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.subscriptions-left-sidebar {
+  width: 380px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.subscriptions-right-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.subscriptions-header {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.subscriptions-table-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.subscriptions-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.subscriptions-table thead {
+  background: #f9fafb;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.subscriptions-table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.subscriptions-table tbody tr {
+  border-bottom: 1px solid #f3f4f6;
+  transition: all 0.2s;
+}
+
+.subscriptions-table tbody tr:hover {
+  background: #f9fafb;
+}
+
+.subscriptions-table td {
+  padding: 1rem;
+  color: #111827;
+  vertical-align: middle;
+}
+
+/* Status Toggle - Unique to Subscriptions */
+.status-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+}
+
+.status-toggle.active {
+  background: #d1fae5;
+  color: #059669;
+}
+
+.status-toggle.active:hover {
+  background: #a7f3d0;
+}
+
+.status-toggle.inactive {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-toggle.inactive:hover {
+  background: #fecaca;
+}
+
+/* Paid Toggle - Unique to Subscriptions */
+.paid-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.paid-toggle.paid {
+  background: #10b981;
+  color: white;
+  box-shadow: 0 1px 3px rgba(16, 185, 129, 0.3);
+}
+
+.paid-toggle.paid:hover {
+  background: #059669;
+  box-shadow: 0 2px 6px rgba(16, 185, 129, 0.4);
+}
+
+.paid-toggle.unpaid {
+  background: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+.paid-toggle.unpaid:hover {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.paid-toggle svg {
+  flex-shrink: 0;
+}
+
+.subscription-name {
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Frequency Badge - Unique to Subscriptions */
+.frequency-badge {
+  color: #6b7280;
+}
+
+.badge-pill {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: #f3f4f6;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.subscription-amount {
+  font-weight: 700;
+  color: #0ea5e9;
+  font-size: 0.938rem;
+}
+
+/* Payment Status - Unique to Subscriptions */
+.payment-status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.payment-date {
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.payment-badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 8px;
+  font-size: 0.688rem;
+  font-weight: 600;
+  text-align: center;
+  width: fit-content;
+}
+
+/* Subscription Form - Unique to Subscriptions */
+.subscription-form {
+  padding: 1.5rem;
+}
+
+.form-group-checkbox {
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #0ea5e9;
+}
+
+/* Responsive - Subscription-specific */
+@media (max-width: 1024px) {
+  .subscriptions-container {
+    flex-direction: column;
+  }
+
+  .subscriptions-left-sidebar {
+    width: 100%;
+  }
+
+  .subscriptions-right-content {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .subscriptions-page {
+    padding: 1rem;
+  }
+
+  .subscriptions-header {
+    padding: 1rem;
+  }
+
+  .subscriptions-table-container {
+    overflow-x: auto;
+  }
+
+  .subscriptions-table {
+    min-width: 900px;
+  }
+}
