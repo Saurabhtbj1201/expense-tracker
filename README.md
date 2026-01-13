@@ -68,6 +68,7 @@ This project is licensed under the MIT License.
 
 ## 👨‍💻 Developer
 <div align="center">
+
 ### © Made with ❤️ by Saurabh Kumar. All Rights Reserved 2025
 
 <!-- Profile Section with Photo and Follow Button -->
@@ -93,6 +94,7 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
+
   <strong>Made with ❤️ by Saurabh Kumar</strong>
   <br>
   ⭐ Star this repo if you find it helpful!
