@@ -127,12 +127,14 @@
 }
 
 .form-groups input {
-  padding-left: 3rem;
+  padding: 1rem 1rem 1rem 3rem;
   font-size: 0.938rem;
   transition: all 0.3s ease;
   background: #f9fafb;
   color: #111827;
   font-weight: 400;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
 }
 
 .form-groups input:focus {
