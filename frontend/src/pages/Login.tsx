@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useExpense } from '../context/ExpenseContext';
+import AdSense from '../components/AdSense';
 import '../styles/Login.css';
 
 interface LoginFormData {
@@ -225,6 +226,15 @@ const Login: React.FC = () => {
             </div>
           </form>
         )}
+
+        {/* AdSense Ad */}
+        <div style={{ margin: '2rem 0', textAlign: 'center' }}>
+          <AdSense 
+            adSlot="3608889475"
+            adFormat="auto"
+            fullWidth={true}
+          />
+        </div>
       </div>
     </div>
   );

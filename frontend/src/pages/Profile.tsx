@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { useExpense } from '../context/ExpenseContext';
+import AdSense from '../components/AdSense';
 import '../styles/Profile.css';
 
 const Profile = () => {
@@ -217,6 +218,15 @@ const Profile = () => {
             <span className="stat-label">Monthly Budget</span>
             <span className="stat-value">{user?.monthlyBudget || 'Not set'}</span>
           </div>
+        </div>
+
+        {/* AdSense Ad */}
+        <div style={{ margin: '2rem 0', textAlign: 'center' }}>
+          <AdSense 
+            adSlot="3608889475"
+            adFormat="auto"
+            fullWidth={true}
+          />
         </div>
       </div>
 
