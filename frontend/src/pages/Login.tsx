@@ -112,7 +112,7 @@ const Login: React.FC = () => {
 
         {!isSignup ? (
           <form onSubmit={handleLoginSubmit} className="login-form">
-            <div className="form-group">
+            <div className="form-groups">
               <label htmlFor="email">Email Address</label>
               <input
                 type="email"
@@ -124,7 +124,7 @@ const Login: React.FC = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-groups">
               <label htmlFor="password">Password</label>
               <input
                 type="password"
@@ -157,7 +157,7 @@ const Login: React.FC = () => {
           </form>
         ) : (
           <form onSubmit={handleSignupSubmit} className="login-form">
-            <div className="form-group">
+            <div className="form-groups">
               <label htmlFor="name">Full Name</label>
               <input
                 type="text"
@@ -169,7 +169,7 @@ const Login: React.FC = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-groups">
               <label htmlFor="email">Email Address</label>
               <input
                 type="email"
@@ -181,7 +181,7 @@ const Login: React.FC = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-groups">
               <label htmlFor="password">Password</label>
               <input
                 type="password"
@@ -193,7 +193,7 @@ const Login: React.FC = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="form-groups">
               <label htmlFor="confirmPassword">Confirm Password</label>
               <input
                 type="password"
